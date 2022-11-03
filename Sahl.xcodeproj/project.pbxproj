@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530A311A2913AA2300F9CFAA /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530A31192913AA2300F9CFAA /* PasscodeView.swift */; };
 		90F6082629138D7D008CAE5F /* SahlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6082529138D7D008CAE5F /* SahlApp.swift */; };
 		90F6082A29138D7E008CAE5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F6082929138D7E008CAE5F /* Assets.xcassets */; };
 		90F6082E29138D7E008CAE5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F6082D29138D7E008CAE5F /* Preview Assets.xcassets */; };
@@ -18,7 +19,7 @@
 		90F6084229138F2C008CAE5F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6084129138F2C008CAE5F /* SignInView.swift */; };
 		90F6084429138F43008CAE5F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6084329138F43008CAE5F /* SignUpView.swift */; };
 		90F6084629138F54008CAE5F /* SignUpDriverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6084529138F54008CAE5F /* SignUpDriverView.swift */; };
-		90F6084829138F65008CAE5F /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6084729138F65008CAE5F /* VerificationView.swift */; };
+		90F6084829138F65008CAE5F /* VerifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6084729138F65008CAE5F /* VerifyView.swift */; };
 		90F6084B29138F97008CAE5F /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6084A29138F97008CAE5F /* MainTabView.swift */; };
 		90F6084D29138FB3008CAE5F /* MapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6084C29138FB3008CAE5F /* MapViewRepresentable.swift */; };
 		90F6084F29138FC7008CAE5F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6084E29138FC7008CAE5F /* HomeView.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		530A31192913AA2300F9CFAA /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
 		90F6082229138D7D008CAE5F /* Sahl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sahl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F6082529138D7D008CAE5F /* SahlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SahlApp.swift; sourceTree = "<group>"; };
 		90F6082929138D7E008CAE5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,7 +63,7 @@
 		90F6084129138F2C008CAE5F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		90F6084329138F43008CAE5F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		90F6084529138F54008CAE5F /* SignUpDriverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDriverView.swift; sourceTree = "<group>"; };
-		90F6084729138F65008CAE5F /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
+		90F6084729138F65008CAE5F /* VerifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyView.swift; sourceTree = "<group>"; };
 		90F6084A29138F97008CAE5F /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		90F6084C29138FB3008CAE5F /* MapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewRepresentable.swift; sourceTree = "<group>"; };
 		90F6084E29138FC7008CAE5F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -173,7 +175,8 @@
 				90F6084129138F2C008CAE5F /* SignInView.swift */,
 				90F6084329138F43008CAE5F /* SignUpView.swift */,
 				90F6084529138F54008CAE5F /* SignUpDriverView.swift */,
-				90F6084729138F65008CAE5F /* VerificationView.swift */,
+				90F6084729138F65008CAE5F /* VerifyView.swift */,
+				530A31192913AA2300F9CFAA /* PasscodeView.swift */,
 			);
 			path = LogReg;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				90F60876291391D4008CAE5F /* UserAccountView.swift in Sources */,
 				90F60865291390C9008CAE5F /* LightBlueModifier.swift in Sources */,
 				90F60862291390AC008CAE5F /* NotificationView.swift in Sources */,
+				530A311A2913AA2300F9CFAA /* PasscodeView.swift in Sources */,
 				90F6084229138F2C008CAE5F /* SignInView.swift in Sources */,
 				90F6084F29138FC7008CAE5F /* HomeView.swift in Sources */,
 				90F6085929139033008CAE5F /* DriversView.swift in Sources */,
@@ -364,7 +368,7 @@
 				90F6085129138FD9008CAE5F /* LocationSearchView.swift in Sources */,
 				90F6088629139401008CAE5F /* Color.swift in Sources */,
 				90F6085D29139058008CAE5F /* ChatView.swift in Sources */,
-				90F6084829138F65008CAE5F /* VerificationView.swift in Sources */,
+				90F6084829138F65008CAE5F /* VerifyView.swift in Sources */,
 				90F6084429138F43008CAE5F /* SignUpView.swift in Sources */,
 				90F6087E29139287008CAE5F /* HelpCenterView.swift in Sources */,
 				90F6086E2913915D008CAE5F /* DriverAccountView.swift in Sources */,

@@ -28,6 +28,7 @@ struct SahlView: View {
                 
                 NavigationLink {
                     SignInView()
+                        .navigationBarBackButtonHidden()
                 } label: {
                     Text("Sign in".uppercased())
                         .lightBlueStyle()
@@ -35,6 +36,7 @@ struct SahlView: View {
                 
                 NavigationLink {
                     SignUpView()
+                        .navigationBarBackButtonHidden()
                 } label: {
                     Text("Sign up".uppercased())
                         .lightBlueStyle()
