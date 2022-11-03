@@ -8,18 +8,87 @@
 
 /* Begin PBXBuildFile section */
 		90F6082629138D7D008CAE5F /* SahlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6082529138D7D008CAE5F /* SahlApp.swift */; };
-		90F6082829138D7D008CAE5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6082729138D7D008CAE5F /* ContentView.swift */; };
 		90F6082A29138D7E008CAE5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F6082929138D7E008CAE5F /* Assets.xcassets */; };
 		90F6082E29138D7E008CAE5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F6082D29138D7E008CAE5F /* Preview Assets.xcassets */; };
+		90F6083629138E63008CAE5F /* TabItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6083529138E63008CAE5F /* TabItems.swift */; };
+		90F6083829138E76008CAE5F /* MapViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6083729138E76008CAE5F /* MapViewState.swift */; };
+		90F6083A29138E88008CAE5F /* SahlLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6083929138E88008CAE5F /* SahlLocation.swift */; };
+		90F6083D29138ED6008CAE5F /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6083C29138ED6008CAE5F /* LaunchView.swift */; };
+		90F6084029138F0D008CAE5F /* SahlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6083F29138F0D008CAE5F /* SahlView.swift */; };
+		90F6084229138F2C008CAE5F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6084129138F2C008CAE5F /* SignInView.swift */; };
+		90F6084429138F43008CAE5F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6084329138F43008CAE5F /* SignUpView.swift */; };
+		90F6084629138F54008CAE5F /* SignUpDriverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6084529138F54008CAE5F /* SignUpDriverView.swift */; };
+		90F6084829138F65008CAE5F /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6084729138F65008CAE5F /* VerificationView.swift */; };
+		90F6084B29138F97008CAE5F /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6084A29138F97008CAE5F /* MainTabView.swift */; };
+		90F6084D29138FB3008CAE5F /* MapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6084C29138FB3008CAE5F /* MapViewRepresentable.swift */; };
+		90F6084F29138FC7008CAE5F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6084E29138FC7008CAE5F /* HomeView.swift */; };
+		90F6085129138FD9008CAE5F /* LocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6085029138FD9008CAE5F /* LocationSearchView.swift */; };
+		90F6085329138FF0008CAE5F /* LocationSearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6085229138FF0008CAE5F /* LocationSearchResultCell.swift */; };
+		90F6085529139003008CAE5F /* RideRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6085429139003008CAE5F /* RideRequestView.swift */; };
+		90F608572913901F008CAE5F /* TripInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F608562913901F008CAE5F /* TripInfoView.swift */; };
+		90F6085929139033008CAE5F /* DriversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6085829139033008CAE5F /* DriversView.swift */; };
+		90F6085B29139045008CAE5F /* DriverInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6085A29139045008CAE5F /* DriverInfoView.swift */; };
+		90F6085D29139058008CAE5F /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6085C29139058008CAE5F /* ChatView.swift */; };
+		90F608602913909B008CAE5F /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6085F2913909B008CAE5F /* TripsView.swift */; };
+		90F60862291390AC008CAE5F /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F60861291390AC008CAE5F /* NotificationView.swift */; };
+		90F60865291390C9008CAE5F /* LightBlueModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F60864291390C9008CAE5F /* LightBlueModifier.swift */; };
+		90F6086E2913915D008CAE5F /* DriverAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6086D2913915D008CAE5F /* DriverAccountView.swift */; };
+		90F6087029139170008CAE5F /* EditDriverAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6086F29139170008CAE5F /* EditDriverAccountView.swift */; };
+		90F60874291391A8008CAE5F /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F60873291391A8008CAE5F /* MessageView.swift */; };
+		90F60876291391D4008CAE5F /* UserAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F60875291391D4008CAE5F /* UserAccountView.swift */; };
+		90F60878291391E9008CAE5F /* EditUserAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F60877291391E9008CAE5F /* EditUserAccountView.swift */; };
+		90F6087A2913924F008CAE5F /* ReviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F608792913924F008CAE5F /* ReviewsView.swift */; };
+		90F6087C29139272008CAE5F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6087B29139272008CAE5F /* SettingsView.swift */; };
+		90F6087E29139287008CAE5F /* HelpCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6087D29139287008CAE5F /* HelpCenterView.swift */; };
+		90F6088129139394008CAE5F /* LocationSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6088029139394008CAE5F /* LocationSearchViewModel.swift */; };
+		90F60884291393F0008CAE5F /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F60883291393F0008CAE5F /* Double.swift */; };
+		90F6088629139401008CAE5F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6088529139401008CAE5F /* Color.swift */; };
+		90F6088A29139622008CAE5F /* MartelSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90F6088829139581008CAE5F /* MartelSans-Regular.ttf */; };
+		90F6088C29139714008CAE5F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6088B29139714008CAE5F /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		90F6082229138D7D008CAE5F /* Sahl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sahl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F6082529138D7D008CAE5F /* SahlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SahlApp.swift; sourceTree = "<group>"; };
-		90F6082729138D7D008CAE5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		90F6082929138D7E008CAE5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90F6082B29138D7E008CAE5F /* Sahl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sahl.entitlements; sourceTree = "<group>"; };
 		90F6082D29138D7E008CAE5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		90F6083529138E63008CAE5F /* TabItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItems.swift; sourceTree = "<group>"; };
+		90F6083729138E76008CAE5F /* MapViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewState.swift; sourceTree = "<group>"; };
+		90F6083929138E88008CAE5F /* SahlLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SahlLocation.swift; sourceTree = "<group>"; };
+		90F6083C29138ED6008CAE5F /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		90F6083F29138F0D008CAE5F /* SahlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SahlView.swift; sourceTree = "<group>"; };
+		90F6084129138F2C008CAE5F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		90F6084329138F43008CAE5F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		90F6084529138F54008CAE5F /* SignUpDriverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDriverView.swift; sourceTree = "<group>"; };
+		90F6084729138F65008CAE5F /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
+		90F6084A29138F97008CAE5F /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		90F6084C29138FB3008CAE5F /* MapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewRepresentable.swift; sourceTree = "<group>"; };
+		90F6084E29138FC7008CAE5F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		90F6085029138FD9008CAE5F /* LocationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchView.swift; sourceTree = "<group>"; };
+		90F6085229138FF0008CAE5F /* LocationSearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchResultCell.swift; sourceTree = "<group>"; };
+		90F6085429139003008CAE5F /* RideRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideRequestView.swift; sourceTree = "<group>"; };
+		90F608562913901F008CAE5F /* TripInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripInfoView.swift; sourceTree = "<group>"; };
+		90F6085829139033008CAE5F /* DriversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversView.swift; sourceTree = "<group>"; };
+		90F6085A29139045008CAE5F /* DriverInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverInfoView.swift; sourceTree = "<group>"; };
+		90F6085C29139058008CAE5F /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		90F6085F2913909B008CAE5F /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
+		90F60861291390AC008CAE5F /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		90F60864291390C9008CAE5F /* LightBlueModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightBlueModifier.swift; sourceTree = "<group>"; };
+		90F6086D2913915D008CAE5F /* DriverAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverAccountView.swift; sourceTree = "<group>"; };
+		90F6086F29139170008CAE5F /* EditDriverAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDriverAccountView.swift; sourceTree = "<group>"; };
+		90F60873291391A8008CAE5F /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		90F60875291391D4008CAE5F /* UserAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountView.swift; sourceTree = "<group>"; };
+		90F60877291391E9008CAE5F /* EditUserAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserAccountView.swift; sourceTree = "<group>"; };
+		90F608792913924F008CAE5F /* ReviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsView.swift; sourceTree = "<group>"; };
+		90F6087B29139272008CAE5F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		90F6087D29139287008CAE5F /* HelpCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCenterView.swift; sourceTree = "<group>"; };
+		90F6088029139394008CAE5F /* LocationSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewModel.swift; sourceTree = "<group>"; };
+		90F60883291393F0008CAE5F /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		90F6088529139401008CAE5F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		90F6088829139581008CAE5F /* MartelSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MartelSans-Regular.ttf"; sourceTree = "<group>"; };
+		90F60889291395D0008CAE5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		90F6088B29139714008CAE5F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +121,15 @@
 		90F6082429138D7D008CAE5F /* Sahl */ = {
 			isa = PBXGroup;
 			children = (
-				90F6082529138D7D008CAE5F /* SahlApp.swift */,
-				90F6082729138D7D008CAE5F /* ContentView.swift */,
-				90F6082929138D7E008CAE5F /* Assets.xcassets */,
+				90F60889291395D0008CAE5F /* Info.plist */,
+				90F6088729139576008CAE5F /* Fonts */,
+				90F6083429138E3A008CAE5F /* Model */,
+				90F6083B29138EA7008CAE5F /* View */,
+				90F6087F29139382008CAE5F /* ViewModel */,
+				90F60882291393DF008CAE5F /* Extensions */,
 				90F6082B29138D7E008CAE5F /* Sahl.entitlements */,
 				90F6082C29138D7E008CAE5F /* Preview Content */,
+				90F6088B29139714008CAE5F /* LocationManager.swift */,
 			);
 			path = Sahl;
 			sourceTree = "<group>";
@@ -67,6 +140,133 @@
 				90F6082D29138D7E008CAE5F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		90F6083429138E3A008CAE5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				90F6083529138E63008CAE5F /* TabItems.swift */,
+				90F6083729138E76008CAE5F /* MapViewState.swift */,
+				90F6083929138E88008CAE5F /* SahlLocation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		90F6083B29138EA7008CAE5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90F6082529138D7D008CAE5F /* SahlApp.swift */,
+				90F6083C29138ED6008CAE5F /* LaunchView.swift */,
+				90F6083E29138EEC008CAE5F /* LogReg */,
+				90F6084929138F7C008CAE5F /* Home */,
+				90F6085E29139086008CAE5F /* Details */,
+				90F60866291390FE008CAE5F /* Account */,
+				90F6082929138D7E008CAE5F /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90F6083E29138EEC008CAE5F /* LogReg */ = {
+			isa = PBXGroup;
+			children = (
+				90F6083F29138F0D008CAE5F /* SahlView.swift */,
+				90F6084129138F2C008CAE5F /* SignInView.swift */,
+				90F6084329138F43008CAE5F /* SignUpView.swift */,
+				90F6084529138F54008CAE5F /* SignUpDriverView.swift */,
+				90F6084729138F65008CAE5F /* VerificationView.swift */,
+			);
+			path = LogReg;
+			sourceTree = "<group>";
+		};
+		90F6084929138F7C008CAE5F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				90F6084A29138F97008CAE5F /* MainTabView.swift */,
+				90F6084C29138FB3008CAE5F /* MapViewRepresentable.swift */,
+				90F6084E29138FC7008CAE5F /* HomeView.swift */,
+				90F6085029138FD9008CAE5F /* LocationSearchView.swift */,
+				90F6085229138FF0008CAE5F /* LocationSearchResultCell.swift */,
+				90F6085429139003008CAE5F /* RideRequestView.swift */,
+				90F608562913901F008CAE5F /* TripInfoView.swift */,
+				90F6085829139033008CAE5F /* DriversView.swift */,
+				90F6085A29139045008CAE5F /* DriverInfoView.swift */,
+				90F6085C29139058008CAE5F /* ChatView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		90F6085E29139086008CAE5F /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				90F6085F2913909B008CAE5F /* TripsView.swift */,
+				90F60861291390AC008CAE5F /* NotificationView.swift */,
+				90F60863291390BA008CAE5F /* Modifiers */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		90F60863291390BA008CAE5F /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				90F60864291390C9008CAE5F /* LightBlueModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		90F60866291390FE008CAE5F /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				90F608672913911C008CAE5F /* User */,
+				90F6086C2913914C008CAE5F /* Driver */,
+				90F60873291391A8008CAE5F /* MessageView.swift */,
+				90F608792913924F008CAE5F /* ReviewsView.swift */,
+				90F6087B29139272008CAE5F /* SettingsView.swift */,
+				90F6087D29139287008CAE5F /* HelpCenterView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		90F608672913911C008CAE5F /* User */ = {
+			isa = PBXGroup;
+			children = (
+				90F60875291391D4008CAE5F /* UserAccountView.swift */,
+				90F60877291391E9008CAE5F /* EditUserAccountView.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		90F6086C2913914C008CAE5F /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				90F6086D2913915D008CAE5F /* DriverAccountView.swift */,
+				90F6086F29139170008CAE5F /* EditDriverAccountView.swift */,
+			);
+			path = Driver;
+			sourceTree = "<group>";
+		};
+		90F6087F29139382008CAE5F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				90F6088029139394008CAE5F /* LocationSearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		90F60882291393DF008CAE5F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				90F60883291393F0008CAE5F /* Double.swift */,
+				90F6088529139401008CAE5F /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		90F6088729139576008CAE5F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				90F6088829139581008CAE5F /* MartelSans-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F6088A29139622008CAE5F /* MartelSans-Regular.ttf in Resources */,
 				90F6082E29138D7E008CAE5F /* Preview Assets.xcassets in Resources */,
 				90F6082A29138D7E008CAE5F /* Assets.xcassets in Resources */,
 			);
@@ -139,8 +340,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90F6082829138D7D008CAE5F /* ContentView.swift in Sources */,
+				90F608602913909B008CAE5F /* TripsView.swift in Sources */,
+				90F6085329138FF0008CAE5F /* LocationSearchResultCell.swift in Sources */,
+				90F6083D29138ED6008CAE5F /* LaunchView.swift in Sources */,
+				90F60876291391D4008CAE5F /* UserAccountView.swift in Sources */,
+				90F60865291390C9008CAE5F /* LightBlueModifier.swift in Sources */,
+				90F60862291390AC008CAE5F /* NotificationView.swift in Sources */,
+				90F6084229138F2C008CAE5F /* SignInView.swift in Sources */,
+				90F6084F29138FC7008CAE5F /* HomeView.swift in Sources */,
+				90F6085929139033008CAE5F /* DriversView.swift in Sources */,
+				90F6084629138F54008CAE5F /* SignUpDriverView.swift in Sources */,
+				90F6083629138E63008CAE5F /* TabItems.swift in Sources */,
+				90F608572913901F008CAE5F /* TripInfoView.swift in Sources */,
+				90F60874291391A8008CAE5F /* MessageView.swift in Sources */,
+				90F6084029138F0D008CAE5F /* SahlView.swift in Sources */,
+				90F6084B29138F97008CAE5F /* MainTabView.swift in Sources */,
+				90F6087C29139272008CAE5F /* SettingsView.swift in Sources */,
+				90F6087A2913924F008CAE5F /* ReviewsView.swift in Sources */,
+				90F6088C29139714008CAE5F /* LocationManager.swift in Sources */,
+				90F6087029139170008CAE5F /* EditDriverAccountView.swift in Sources */,
+				90F6085529139003008CAE5F /* RideRequestView.swift in Sources */,
+				90F6088129139394008CAE5F /* LocationSearchViewModel.swift in Sources */,
+				90F6085129138FD9008CAE5F /* LocationSearchView.swift in Sources */,
+				90F6088629139401008CAE5F /* Color.swift in Sources */,
+				90F6085D29139058008CAE5F /* ChatView.swift in Sources */,
+				90F6084829138F65008CAE5F /* VerificationView.swift in Sources */,
+				90F6084429138F43008CAE5F /* SignUpView.swift in Sources */,
+				90F6087E29139287008CAE5F /* HelpCenterView.swift in Sources */,
+				90F6086E2913915D008CAE5F /* DriverAccountView.swift in Sources */,
+				90F6085B29139045008CAE5F /* DriverInfoView.swift in Sources */,
+				90F6083A29138E88008CAE5F /* SahlLocation.swift in Sources */,
 				90F6082629138D7D008CAE5F /* SahlApp.swift in Sources */,
+				90F60878291391E9008CAE5F /* EditUserAccountView.swift in Sources */,
+				90F6084D29138FB3008CAE5F /* MapViewRepresentable.swift in Sources */,
+				90F60884291393F0008CAE5F /* Double.swift in Sources */,
+				90F6083829138E76008CAE5F /* MapViewState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +503,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sahl/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to access your location to find you nearby drivers and rides";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -307,6 +543,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sahl/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to access your location to find you nearby drivers and rides";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
