@@ -15,7 +15,7 @@ struct LaunchView: View {
     var body: some View {
         Group {
             if showMainView {
-                MainTabView()
+                SahlView()
             } else {
                 ZStack {
                     Color("Navy Blue")
