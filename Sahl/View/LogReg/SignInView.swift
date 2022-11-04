@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct SignInView: View {
-    @Environment (\.presentationMode) var PresentationMode
 
-    @State var phoneNumber:String=""
+    @State var phoneNumber: String = ""
+    
     var body: some View {
         
                     ZStack(alignment: .topLeading) {
@@ -20,92 +20,78 @@ struct SignInView: View {
                             .scaledToFit()
                             .padding(.top, 50)
                         
-                        VStack{
-                            Text("Enter your phone number to start ")
-                                .padding(.top, 400.0)
-                                .padding(.leading,10)
-                                .font(.title2)
+                        VStack {
                             
+                            Spacer()
+                            Spacer()
+                            Spacer()
                             
-                            HStack{
-                                Button("🇸🇦+966") {
-                                    
-                                }
-                                .foregroundColor(.white)
-                                .padding(.vertical,6)
-                                .padding(.horizontal,10)
-                                .background(Color("Light Blue"))
-                                .cornerRadius(10)
-                                .padding(.top,10.0)
-                                .padding(.leading,60)
+                            VStack(alignment: .leading) {
+                                Text("Enter your phone number to start")
+                                    .font(.title2)
                                 
                                 
-                                
-                                
-                                
-                                TextField("5********", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                                    .underline()
-                                    .underline()
-                                    .padding(.top,10.0)
-                                    .padding(.leading,50)
-                                    .keyboardType(.numberPad)
-                                
-                                
-                                
-                            }
-                            
-                            NavigationLink {
-                                VerifyView()
-                                    .navigationBarBackButtonHidden()
-                            } label: {
-                                Text("Sing in")
-                                    .lightBlueStyle()
-                                    .padding(10)
-                            }
-                            
-                            HStack{
-                                Text("Don’t have an account ?")
-                                
-                                NavigationLink(destination: SignUpView()
-                                    .navigationBarBackButtonHidden()) {
-                                        Text("Register")
+                                HStack {
+                                    Button("🇸🇦+966") {
                                         
                                     }
-                                
-                                
-                                
+                                    .foregroundColor(.gray)
+                                    .padding(.vertical,6)
+                                    .padding(.horizontal,10)
+                                    .background(Color(UIColor.systemGray5))
+                                    .cornerRadius(10)
+                                    
+                                    TextField("5 55 555 555", text: $phoneNumber)
+                                        .padding(5)
+                                        .keyboardType(.numberPad)
+                                        .overlay(alignment: .bottom) {
+                                            Rectangle()
+                                                .fill(.gray.opacity(0.2))
+                                                .frame(height: 1)
+                                        }
+                                    
+                                }
                             }
+                            .padding(.horizontal, 30)
                             
                             
-                            
-                            
-                            
+                            VStack(spacing: 5) {
+                                NavigationLink {
+                                    VerifyView(phoneNumber: phoneNumber)
+                                        .navigationBarBackButtonHidden()
+                                } label: {
+                                    Text("Sing in".uppercased())
+                                        .lightBlueStyle()
+                                        .padding(.top, 10)
+                                }
+                                
+                                HStack{
+                                    Text("Don’t have an account?")
+                                    
+                                    NavigationLink(destination: SignUpView()
+                                        .navigationBarBackButtonHidden()) {
+                                            Text("Register")
+                                                .bold()
+                                                .foregroundColor(Color("Navy Blue"))
+                                        }
+                                    
+                                }
+                            }
+                            Spacer()
                         }
                         
                     }
-                    .navigationBarItems(leading: backButton)
-                
-            
+                    .navigationBarItems(leading: BackButton())
         }
     
-    var backButton: some View {
-        HStack(spacing:20){
-            Image(systemName: "chevron.backward")
-                .foregroundColor(Color("Navy Blue"))
-                .font(.title)
-                .padding()
-                .onTapGesture {
-                    PresentationMode.wrappedValue.dismiss()
-                }
-            Spacer()
-        }
-    }
     
 
     }
     struct SignInView_Previews: PreviewProvider {
         static var previews: some View {
-            SignInView()
+            NavigationView {
+                SignInView()
+            }
         }
     }
     

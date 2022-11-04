@@ -9,39 +9,42 @@ import SwiftUI
 
 struct LaunchView: View {
     
-    @State private var showMainView = false
-    @State private var offset = UIScreen.main.bounds.width
+    @State var isActive : Bool = false
+    @State private var size = 0.5
+    @State private var opacity = 0.5
     
     var body: some View {
-        Group {
-            if showMainView {
-                SahlView()
-            } else {
-                ZStack {
-                    Color("Navy Blue")
-                        .ignoresSafeArea()
-                    Image("disability man")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: UIScreen.main.bounds.width + 20)
-                        .offset(x: -offset)
-                    
-                }
+        
+        if isActive {
+            SahlView()
+        } else {
+            ZStack {
+                Color("Baby Blue")
+                    .ignoresSafeArea()
+                
+                Image("logo_car")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 270)
+                    .scaleEffect(size)
+                    .opacity(opacity)
+                    .onAppear {
+                        withAnimation(.easeIn(duration: 1.2)) {
+                            self.size = 1.00
+                            self.opacity = 1.00
+                        }
+                    }
+                
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.7) {
+                            withAnimation {
+                                self.isActive = true
+                            }
+                        }
+                    }
             }
         }
-        .onAppear {
-            withAnimation(Animation.linear.delay(0.9)) {
-                self.offset = 0
-            }
-            
-        }
-        .onAppear{
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                withAnimation(Animation.linear(duration: 0.5)) {
-                    self.showMainView = true
-                }
-            }
-        }
+
     }
 }
 

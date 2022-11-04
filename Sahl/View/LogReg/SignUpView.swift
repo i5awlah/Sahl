@@ -16,7 +16,6 @@ struct SignUpView: View {
     @State private var signupAsDriver = false
     @State private var signupAsUser = false
     
-    @Environment (\.presentationMode) var PresentationMode
     var body: some View {
         
             ZStack(alignment: .topLeading) {
@@ -42,21 +41,20 @@ struct SignUpView: View {
                         HStack{
                             Button("🇸🇦+966") {
                             }
-                            .foregroundColor(.white)
-                            .padding(.vertical,4)
+                            .foregroundColor(.gray)
+                            .padding(.vertical,6)
                             .padding(.horizontal,10)
-                            .background(Color.init(UIColor.lightGray))
+                            .background(Color(UIColor.systemGray5))
                             .cornerRadius(10)
                             .padding(.top,10.0)
                             .padding(.leading,30)
                             
                             
                             VStack {
-                                TextField("5********", text: $phoneNumber)
+                                TextField("5 55 555 555", text: $phoneNumber)
                                     .keyboardType(.numberPad)
                                     .padding(.top,10.0)
-                                    .padding(.leading,60)
-                                    .font(.headline)
+                                    .padding(.leading,15)
                                     .keyboardType(.numberPad)
                                 Rectangle()
                                     .frame(height: 0.3)
@@ -66,66 +64,56 @@ struct SignUpView: View {
                             
                             
                         }
-                        HStack{
-                            Text("Are you a driver?")
-                                .font(.system(size:18))
-                                .padding(.leading, 30)
-                            
-                            Toggle("driver", isOn:$isDriver)
-                                .padding(.trailing)
-                                .frame(width: 70)
-                        }
                         
-                        Button {
-                            if isDriver {
-                                signupAsDriver = true
-                            } else {
-                                signupAsUser = true
+                            Toggle("Are you a driver?", isOn:$isDriver)
+                            .frame(width: 200)
+                            .padding()
+                        
+                        VStack(spacing: 5) {
+                            Button {
+                                if isDriver {
+                                    signupAsDriver = true
+                                } else {
+                                    signupAsUser = true
+                                }
+                            } label: {
+                                Text("Sing up".uppercased())
+                                    .lightBlueStyle()
+                                    .padding(.top, 10)
                             }
-                        } label: {
-                            Text("Sing up")
-                                .lightBlueStyle()
+                            
+                            HStack {
+                                Text("Already have an account?")
+                                
+                                NavigationLink(destination: SignInView()
+                                    .navigationBarBackButtonHidden()) {
+                                        Text("Sign in")
+                                            .bold()
+                                            .foregroundColor(Color("Navy Blue"))
+                                    }
+                                
+                            }
                         }
-                        
-                        HStack{
-                            Text("Already have an account ? ")
-                            NavigationLink(destination: SignInView()
-                                .navigationBarBackButtonHidden()) {
-                                    Text("Sign in")
-                                }}
                         
                     }
                 
                 NavigationLink(isActive: $signupAsUser) {
-                    VerifyView()
+                    VerifyView(phoneNumber: phoneNumber)
                         .navigationBarBackButtonHidden()
                 } label: {
                     EmptyView()
                 }
                 
                 NavigationLink(isActive: $signupAsDriver) {
-                    SignUpDriverView()
+                    SignUpDriverView(phoneNumber: phoneNumber)
                         .navigationBarBackButtonHidden()
                 } label: {
                     EmptyView()
                 }
             }
-            .navigationBarItems(leading: backButton)
+            .navigationBarItems(leading: BackButton())
         
         
-    }
-    
-    var backButton: some View {
-        HStack(spacing:20){
-            Image(systemName: "chevron.backward")
-                .foregroundColor(Color("Navy Blue"))
-                .font(.title)
-                .padding()
-                .onTapGesture {
-                    PresentationMode.wrappedValue.dismiss()
-                }
-            Spacer()
-        }
     }
 }
     

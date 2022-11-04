@@ -13,9 +13,7 @@
 import SwiftUI
 struct VerifyView: View {
    
-    @Environment (\.presentationMode) var PresentationMode
-
-    let phoneNumber: String = "+96655555555"
+    let phoneNumber: String
    
     @State var enteredPasscode: String = ""
     @FocusState var keyboardFocused: Bool
@@ -32,7 +30,7 @@ struct VerifyView: View {
                 Text("Verification Code")
                     .font(.title)
                     .bold()
-                Text("Enter the 4- digit code sent you at" + " \n \(phoneNumber)")
+                Text("Enter the 4- digit code sent you at" + " \n +966\(phoneNumber)")
                     .multilineTextAlignment(.center)
                     .foregroundColor(.gray)
                     .padding()
@@ -75,25 +73,12 @@ struct VerifyView: View {
             }
 
         }
-        .navigationBarItems(leading: backButton)
-    }
-    
-    var backButton: some View {
-        HStack(spacing:20){
-            Image(systemName: "chevron.backward")
-                .foregroundColor(Color("Navy Blue"))
-                .font(.title)
-                .padding()
-                .onTapGesture {
-                    PresentationMode.wrappedValue.dismiss()
-                }
-            Spacer()
-        }
+        .navigationBarItems(leading: BackButton())
     }
 }
 struct VerifyView_Previews: PreviewProvider {
     static var previews: some View {
-            VerifyView()
+        VerifyView(phoneNumber: "+96655555555")
     }
 }
 

@@ -46,6 +46,7 @@
 		90F6088629139401008CAE5F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6088529139401008CAE5F /* Color.swift */; };
 		90F6088A29139622008CAE5F /* MartelSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90F6088829139581008CAE5F /* MartelSans-Regular.ttf */; };
 		90F6088C29139714008CAE5F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6088B29139714008CAE5F /* LocationManager.swift */; };
+		90F608AC291509F1008CAE5F /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F608AB291509F1008CAE5F /* BackButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +92,7 @@
 		90F6088829139581008CAE5F /* MartelSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MartelSans-Regular.ttf"; sourceTree = "<group>"; };
 		90F60889291395D0008CAE5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		90F6088B29139714008CAE5F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		90F608AB291509F1008CAE5F /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				90F6084929138F7C008CAE5F /* Home */,
 				90F6085E29139086008CAE5F /* Details */,
 				90F60866291390FE008CAE5F /* Account */,
+				90F608AA291509D0008CAE5F /* Shared */,
 				90F6082929138D7E008CAE5F /* Assets.xcassets */,
 			);
 			path = View;
@@ -203,7 +206,6 @@
 			children = (
 				90F6085F2913909B008CAE5F /* TripsView.swift */,
 				90F60861291390AC008CAE5F /* NotificationView.swift */,
-				90F60863291390BA008CAE5F /* Modifiers */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -270,6 +272,15 @@
 				90F6088829139581008CAE5F /* MartelSans-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		90F608AA291509D0008CAE5F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				90F60863291390BA008CAE5F /* Modifiers */,
+				90F608AB291509F1008CAE5F /* BackButton.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +383,7 @@
 				90F6084429138F43008CAE5F /* SignUpView.swift in Sources */,
 				90F6087E29139287008CAE5F /* HelpCenterView.swift in Sources */,
 				90F6086E2913915D008CAE5F /* DriverAccountView.swift in Sources */,
+				90F608AC291509F1008CAE5F /* BackButton.swift in Sources */,
 				90F6085B29139045008CAE5F /* DriverInfoView.swift in Sources */,
 				90F6083A29138E88008CAE5F /* SahlLocation.swift in Sources */,
 				90F6082629138D7D008CAE5F /* SahlApp.swift in Sources */,
