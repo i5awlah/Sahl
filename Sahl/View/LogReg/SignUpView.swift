@@ -16,6 +16,8 @@ struct SignUpView: View {
     @State private var signupAsDriver = false
     @State private var signupAsUser = false
     
+    @EnvironmentObject var userViewModel: UserViewModel
+    
     var body: some View {
         
             ZStack(alignment: .topLeading) {
@@ -72,8 +74,10 @@ struct SignUpView: View {
                         VStack(spacing: 5) {
                             Button {
                                 if isDriver {
+                                    userViewModel.currentUserType = .driver
                                     signupAsDriver = true
                                 } else {
+                                    userViewModel.currentUserType = .user
                                     signupAsUser = true
                                 }
                             } label: {

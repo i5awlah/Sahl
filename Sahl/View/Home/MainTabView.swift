@@ -11,6 +11,7 @@ import SwiftUI
 
 
 struct MainTabView: View {
+    @EnvironmentObject var userViewModel: UserViewModel
     @StateObject var locationViewModel = LocationSearchViewModel()
     @State var selectedTab: TabItem = .home
     @State private var mapState = MapViewState.noInput
@@ -20,11 +21,20 @@ struct MainTabView: View {
     var body: some View {
         ZStack {
             
-            switch(selectedTab) {
-            case .home: HomeView(mapState: $mapState)
-            case .list: TripsView()
-            case .profile: UserAccountView()
+            if userViewModel.currentUserType == .user {
+                switch(selectedTab) {
+                case .home: HomeView(mapState: $mapState)
+                case .list: TripsView()
+                case .profile: UserAccountView()
+                }
+            } else {
+                switch(selectedTab) {
+                case .home: TripsView()
+                case .list: NotificationView()
+                case .profile: DriverAccountView()
+                }
             }
+            
             
             tabBar
                 .ignoresSafeArea(.keyboard)
@@ -107,6 +117,7 @@ struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
         MainTabView()
             .environmentObject(LocationSearchViewModel())
+            .environmentObject(UserViewModel())
     }
 }
 

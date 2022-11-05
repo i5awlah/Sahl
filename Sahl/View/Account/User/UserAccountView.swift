@@ -17,7 +17,9 @@ struct UserAccountView: View {
     @State var title: String = "Alert"
     @State var select: String = "English"
     let filterOption: [String] = ["English", "Arabic"]
+    
     @State private var isShowEditProfile = false
+    @State private var isShowHelpCenter = false
     
     @State var name = "Adem Abdullah"
     @State var image: Image? = Image("UserPhoto")
@@ -161,20 +163,24 @@ struct UserAccountView: View {
                         }
                     ,
                     trailing:
-                        NavigationLink(
-                            destination: HelpCenterView().navigationBarBackButtonHidden(),
-                            label: {
-                                Image("support")
-                                    .resizable()
-                                    .renderingMode(.template)
-                                    .foregroundColor(Color("Navy Blue"))
-                                    .frame(width: 25,height: 25)
-                            })
+                        Button(action: {
+                            isShowHelpCenter.toggle()
+                        }, label: {
+                            Image("support")
+                                .resizable()
+                                .renderingMode(.template)
+                                .foregroundColor(Color("Navy Blue"))
+                                .frame(width: 25,height: 25)
+                        })
+                        .fullScreenCover(isPresented: $isShowHelpCenter) {
+                            HelpCenterView()
+                        }
                         
                 )
                 
             }
         }
+        
         
     }
 }

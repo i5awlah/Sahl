@@ -40,7 +40,6 @@
 		90F60865291390C9008CAE5F /* LightBlueModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F60864291390C9008CAE5F /* LightBlueModifier.swift */; };
 		90F6086E2913915D008CAE5F /* DriverAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6086D2913915D008CAE5F /* DriverAccountView.swift */; };
 		90F6087029139170008CAE5F /* EditDriverAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6086F29139170008CAE5F /* EditDriverAccountView.swift */; };
-		90F60874291391A8008CAE5F /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F60873291391A8008CAE5F /* MessageView.swift */; };
 		90F60876291391D4008CAE5F /* UserAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F60875291391D4008CAE5F /* UserAccountView.swift */; };
 		90F60878291391E9008CAE5F /* EditUserAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F60877291391E9008CAE5F /* EditUserAccountView.swift */; };
 		90F6087A2913924F008CAE5F /* ReviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F608792913924F008CAE5F /* ReviewsView.swift */; };
@@ -90,7 +89,6 @@
 		90F60864291390C9008CAE5F /* LightBlueModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightBlueModifier.swift; sourceTree = "<group>"; };
 		90F6086D2913915D008CAE5F /* DriverAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverAccountView.swift; sourceTree = "<group>"; };
 		90F6086F29139170008CAE5F /* EditDriverAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDriverAccountView.swift; sourceTree = "<group>"; };
-		90F60873291391A8008CAE5F /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		90F60875291391D4008CAE5F /* UserAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountView.swift; sourceTree = "<group>"; };
 		90F60877291391E9008CAE5F /* EditUserAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserAccountView.swift; sourceTree = "<group>"; };
 		90F608792913924F008CAE5F /* ReviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsView.swift; sourceTree = "<group>"; };
@@ -235,7 +233,6 @@
 			children = (
 				90F608672913911C008CAE5F /* User */,
 				90F6086C2913914C008CAE5F /* Driver */,
-				90F60873291391A8008CAE5F /* MessageView.swift */,
 				90F608792913924F008CAE5F /* ReviewsView.swift */,
 				90032AAF29169B4D00B0D0A1 /* ReviewView.swift */,
 				90F6087B29139272008CAE5F /* SettingsView.swift */,
@@ -383,7 +380,6 @@
 				90032AA62916673A00B0D0A1 /* Driver.swift in Sources */,
 				90F6084629138F54008CAE5F /* SignUpDriverView.swift in Sources */,
 				90F6083629138E63008CAE5F /* TabItems.swift in Sources */,
-				90F60874291391A8008CAE5F /* MessageView.swift in Sources */,
 				90F6084029138F0D008CAE5F /* SahlView.swift in Sources */,
 				90F6084B29138F97008CAE5F /* MainTabView.swift in Sources */,
 				90F6087C29139272008CAE5F /* SettingsView.swift in Sources */,

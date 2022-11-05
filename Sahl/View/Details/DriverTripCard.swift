@@ -2,7 +2,7 @@
 //  DriverTripCard.swift
 //  Sahl
 //
-//  Created by Khawlah on 05/11/2022.
+//  Created by ShahadQadi on 05/11/2022.
 //
 
 import SwiftUI

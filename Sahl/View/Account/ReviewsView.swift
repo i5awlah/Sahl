@@ -12,7 +12,6 @@ struct ReviewsView: View {
         
         ScrollView {
             VStack {
-                // 1
                 ReviewView(name: "Mar***", date: "Now", rateNumber: 2)
                 Divider()
                 ReviewView(name: "Ab***", date: "Now", rateNumber: 5)

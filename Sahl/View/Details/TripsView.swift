@@ -2,7 +2,7 @@
 //  TripsView.swift
 //  Sahl
 //
-//  Created by Shahad on 25/10/2022.
+//  Created by ShahadQadi on 25/10/2022.
 //
 
 import SwiftUI
