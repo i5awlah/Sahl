@@ -21,7 +21,7 @@ struct DriverMiniProfileView: View {
                 .frame(height: UIScreen.main.bounds.height / 3)
                 .ignoresSafeArea()
                 .overlay(alignment:.bottom){
-                    Image(driver.image)
+                    Image(driver.image ?? "UserPhoto")
                         .resizable()
                         .frame(width:120 ,height: 120)
                         .clipShape(Circle())
@@ -98,6 +98,6 @@ struct DriverMiniProfileView: View {
 
 struct DriverMiniProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        DriverMiniProfileView(driver: Driver(name: "Saeed", image: "Saeed", carName: "Hyundai H1", carPlate: "1145 WQA", rate: 3, numberOfRate: 25))
+        DriverMiniProfileView(driver: Driver.all[0])
     }
 }

@@ -14,7 +14,7 @@ struct DriverTripCard: View {
     var body: some View {
         HStack(spacing:0) {
             
-            Image(driver.image)
+            Image(driver.image ?? "UserPhoto")
                 .resizable()
                 .frame(width: 44, height: 44)
                 .padding()

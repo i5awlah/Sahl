@@ -26,7 +26,7 @@ struct ChooseDriver: View {
                                 .navigationBarBackButtonHidden()
                         }, label: {
                             HStack{
-                                Image(driver.image)
+                                Image(driver.image ?? "UserPhoto")
                                     .resizable()
                                     .frame(width:60 ,height: 60)
                                     .clipShape(Circle())

@@ -16,6 +16,9 @@
 		90032AAA29167CF500B0D0A1 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032AA929167CF500B0D0A1 /* ImagePicker.swift */; };
 		90032AAE29168DB400B0D0A1 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032AAD29168DB400B0D0A1 /* UserViewModel.swift */; };
 		90032AB029169B4D00B0D0A1 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032AAF29169B4D00B0D0A1 /* ReviewView.swift */; };
+		90032AB22916EE7300B0D0A1 /* ChatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032AB12916EE7300B0D0A1 /* ChatType.swift */; };
+		90032AB42916EE9C00B0D0A1 /* TripType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032AB32916EE9C00B0D0A1 /* TripType.swift */; };
+		90032AB62916F1BC00B0D0A1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032AB52916F1BC00B0D0A1 /* User.swift */; };
 		90F6082629138D7D008CAE5F /* SahlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6082529138D7D008CAE5F /* SahlApp.swift */; };
 		90F6082A29138D7E008CAE5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F6082929138D7E008CAE5F /* Assets.xcassets */; };
 		90F6082E29138D7E008CAE5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F6082D29138D7E008CAE5F /* Preview Assets.xcassets */; };
@@ -63,6 +66,9 @@
 		90032AA929167CF500B0D0A1 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		90032AAD29168DB400B0D0A1 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		90032AAF29169B4D00B0D0A1 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		90032AB12916EE7300B0D0A1 /* ChatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatType.swift; sourceTree = "<group>"; };
+		90032AB32916EE9C00B0D0A1 /* TripType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripType.swift; sourceTree = "<group>"; };
+		90032AB52916F1BC00B0D0A1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		90F6082229138D7D008CAE5F /* Sahl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sahl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F6082529138D7D008CAE5F /* SahlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SahlApp.swift; sourceTree = "<group>"; };
 		90F6082929138D7E008CAE5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -160,7 +166,10 @@
 				90F6083529138E63008CAE5F /* TabItems.swift */,
 				90F6083729138E76008CAE5F /* MapViewState.swift */,
 				90F6083929138E88008CAE5F /* SahlLocation.swift */,
+				90032AB12916EE7300B0D0A1 /* ChatType.swift */,
+				90032AB32916EE9C00B0D0A1 /* TripType.swift */,
 				90032AA52916673A00B0D0A1 /* Driver.swift */,
+				90032AB52916F1BC00B0D0A1 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -378,6 +387,7 @@
 				90F6084F29138FC7008CAE5F /* HomeView.swift in Sources */,
 				90032A962916619E00B0D0A1 /* ChooseDriverView.swift in Sources */,
 				90032AA62916673A00B0D0A1 /* Driver.swift in Sources */,
+				90032AB42916EE9C00B0D0A1 /* TripType.swift in Sources */,
 				90F6084629138F54008CAE5F /* SignUpDriverView.swift in Sources */,
 				90F6083629138E63008CAE5F /* TabItems.swift in Sources */,
 				90F6084029138F0D008CAE5F /* SahlView.swift in Sources */,
@@ -397,10 +407,12 @@
 				90032AA42916657200B0D0A1 /* DriverMiniProfileView.swift in Sources */,
 				90F6087E29139287008CAE5F /* HelpCenterView.swift in Sources */,
 				90F6086E2913915D008CAE5F /* DriverAccountView.swift in Sources */,
+				90032AB62916F1BC00B0D0A1 /* User.swift in Sources */,
 				90F608AC291509F1008CAE5F /* BackButton.swift in Sources */,
 				90032AA02916624D00B0D0A1 /* DriverChat.swift in Sources */,
 				90032AB029169B4D00B0D0A1 /* ReviewView.swift in Sources */,
 				90F6083A29138E88008CAE5F /* SahlLocation.swift in Sources */,
+				90032AB22916EE7300B0D0A1 /* ChatType.swift in Sources */,
 				90F6082629138D7D008CAE5F /* SahlApp.swift in Sources */,
 				90F60878291391E9008CAE5F /* EditUserAccountView.swift in Sources */,
 				90F6084D29138FB3008CAE5F /* MapViewRepresentable.swift in Sources */,

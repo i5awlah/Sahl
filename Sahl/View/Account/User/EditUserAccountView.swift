@@ -12,14 +12,12 @@ struct EditUserAccountView: View {
     
     @State var textFieldFirstName: String = ""
     @State var textFieldPhone: String = ""
-    @State var dataArray: [String] = []
     
     @State var isShowPicker: Bool = false
-    @Binding var image: Image?
     
     @Binding var showSheet: Bool
-    @Binding var name: String
-    @State var phone = "592266757"
+    @Binding var user: User
+    @Binding var image: Image?
     
     var body: some View {
         
@@ -65,7 +63,7 @@ struct EditUserAccountView: View {
                 
                 
                 
-                Text(name)
+                Text(user.name)
                     .font(.title)
                     .foregroundColor(Color("Navy Blue"))
                     .bold()
@@ -73,20 +71,13 @@ struct EditUserAccountView: View {
                 
                     .foregroundColor(Color.black)
                     .bold()
-                TextField(name, text: $textFieldFirstName)
+                TextField(user.name, text: $textFieldFirstName)
                     .padding()
                     .background(Color.gray.opacity(0.2).cornerRadius(10))
                     .foregroundColor(.black)
                     .font(.title3)
                     .padding(.bottom, 10)
-                
-                //                TextField("Abdullah", text: $textFieldLasttName)
-                //                    .padding()
-                //                    .background(Color.gray.opacity(0.2).cornerRadius(10))
-                //                    .foregroundColor(.black)
-                //                    .font(.title3)
-                //                    .padding(.bottom, 10)
-                
+
                 HStack {
                     Button("🇸🇦 +966"){
                         
@@ -96,7 +87,7 @@ struct EditUserAccountView: View {
                     .background(Color(hue: 1.0, saturation: 0.009, brightness: 0.837))
                     .cornerRadius(10)
                     
-                    TextField(phone, text: $textFieldPhone)
+                    TextField(user.phoneNumber, text: $textFieldPhone)
                         .padding()
                         .background(Color.gray.opacity(0.2).cornerRadius(10))
                         .foregroundColor(.black)
@@ -116,10 +107,10 @@ struct EditUserAccountView: View {
                     trailing:
                         Button(action: {
                             if !textFieldFirstName.isEmpty {
-                                name = textFieldFirstName
+                                user.name = textFieldFirstName
                             }
                             if !textFieldPhone.isEmpty {
-                                phone = textFieldPhone
+                                user.phoneNumber = textFieldPhone
                             }
                             showSheet = false
                         }, label: {
@@ -135,7 +126,7 @@ struct EditUserAccountView: View {
             }
             .padding()
             .sheet(isPresented: $isShowPicker) {
-                ImagePicker(image: self.$image)
+                ImagePicker(image: $image)
             }
             
         }
@@ -147,6 +138,12 @@ struct EditUserAccountView: View {
 
 struct EditUserAccountView_Previews: PreviewProvider {
     static var previews: some View {
-        EditUserAccountView(image: .constant(nil), showSheet: .constant(false), name: .constant("Salem Ahmed"))
+        EditUserAccountView(
+            showSheet: .constant(false),
+            user: .constant(User(
+                name: "Mohammed Abdullah",
+                image: "",
+                phoneNumber: "+966538100999")),
+            image: .constant(nil))
     }
 }

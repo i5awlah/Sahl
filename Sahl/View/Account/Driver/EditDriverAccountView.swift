@@ -21,14 +21,8 @@ struct EditDriverAccountView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
+    @Binding var driver: Driver
     @Binding var image: Image?
-    
-    @Binding var description: String
-    @Binding var name: String
-    @Binding var phone: String
-    @Binding var carName: String
-    @Binding var carModel: String
-    @Binding var carPlate: String
     
     
     var body: some View {
@@ -96,7 +90,7 @@ struct EditDriverAccountView: View {
                     Text("Name")
                         .padding(.trailing)
                     VStack {
-                        TextField(name, text: $textFieldFirstName)
+                        TextField(driver.name, text: $textFieldFirstName)
                             .offset(x: 20)
                         Divider()
                     }
@@ -107,7 +101,7 @@ struct EditDriverAccountView: View {
                     Text("Phone Number")
                         .padding(.trailing)
                     VStack {
-                        TextField(phone, text: $textFieldPhone)
+                        TextField(driver.phoneNumber, text: $textFieldPhone)
                             .offset(x: 20)
                         Divider()
                     }
@@ -118,7 +112,7 @@ struct EditDriverAccountView: View {
                     Text("Car Name")
                         .padding(.trailing)
                     VStack {
-                        TextField(carName, text: $textFieldCarName)
+                        TextField(driver.carName, text: $textFieldCarName)
                             .offset(x: 20)
                         Divider()
                     }
@@ -129,7 +123,7 @@ struct EditDriverAccountView: View {
                     Text("Car Model")
                         .padding(.trailing)
                     VStack {
-                        TextField(carModel, text: $textFieldCarModel)
+                        TextField(driver.carModel, text: $textFieldCarModel)
                             .offset(x: 20)
                         Divider()
                     }
@@ -140,7 +134,7 @@ struct EditDriverAccountView: View {
                     Text("Car Plate")
                         .padding(.trailing)
                     VStack {
-                        TextField(carPlate, text: $textFieldCarPlate)
+                        TextField(driver.carPlate, text: $textFieldCarPlate)
                             .offset(x: 20)
                         Divider()
                     }
@@ -160,22 +154,22 @@ struct EditDriverAccountView: View {
                     trailing:
                         Button(action: {
                             if !textFieldDescription.isEmpty {
-                                description = textFieldDescription
+                                driver.description = textFieldDescription
                             }
                             if !textFieldFirstName.isEmpty {
-                                name = textFieldFirstName
+                                driver.name = textFieldFirstName
                             }
                             if !textFieldPhone.isEmpty {
-                                phone = textFieldPhone
+                                driver.phoneNumber = textFieldPhone
                             }
                             if !textFieldCarName.isEmpty {
-                                carName = textFieldCarName
+                                driver.carName = textFieldCarName
                             }
                             if !textFieldCarModel.isEmpty {
-                                carModel = textFieldCarModel
+                                driver.carModel = textFieldCarModel
                             }
                             if !textFieldCarPlate.isEmpty {
-                                carPlate = textFieldCarPlate
+                                driver.carPlate = textFieldCarPlate
                             }
                             presentationMode.wrappedValue.dismiss()
                         }, label: {
@@ -190,8 +184,11 @@ struct EditDriverAccountView: View {
                 Spacer()
             }
             .padding()
+            .onAppear{
+                image = Image(driver.image )
+            }
             .sheet(isPresented: $isShowPicker) {
-                ImagePicker(image: self.$image)
+                ImagePicker(image: $image)
             }
             
         }
@@ -202,13 +199,6 @@ struct EditDriverAccountView: View {
 
 struct EditDriverAccountView_Previews: PreviewProvider {
     static var previews: some View {
-        EditDriverAccountView(
-            image: .constant(nil),
-            description: .constant("Deliver disabilty people in Narjis,Yasmin district and have suitable car."),
-            name: .constant("Abdullah Saeed"),
-            phone: .constant("+966555555555"),
-            carName: .constant("Hyundai Sonata"),
-            carModel: .constant("2017"),
-            carPlate: .constant("9845 DWS"))
+        EditDriverAccountView(driver: .constant(Driver.all[0]), image: .constant(nil))
     }
 }

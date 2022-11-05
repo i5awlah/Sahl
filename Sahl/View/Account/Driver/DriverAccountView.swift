@@ -12,14 +12,17 @@ struct DriverAccountView: View {
     @Environment(\.presentationMode) var presentationMode
     @State private var isShowEditProfile = false
     
-    @State var image: Image? = Image("AbdullahSaeed")
-    
-    @State var description = "Deliver disabilty people in Narjis,Yasmin district and have suitable car. "
-    @State var name = "Abdullah Saeed"
-    @State var phone: String = "+966555555555"
-    @State var carName = "Hyundai Sonata"
-    @State var carModel: String = "2017"
-    @State var carPlate = "9845 DWS"
+    @State var driver: Driver = Driver(
+        description: "Deliver disabilty people in Narjis,Yasmin district and have suitable car. ",
+        name: "Abdullah Saeed",
+        image: "AbdullahSaeed",
+        phoneNumber: "+966555555555",
+        carName: "Hyundai Sonata",
+        carModel: "2022",
+        carPlate: "9845 DWS",
+        rate: 4,
+        numberOfRate: 44)
+    @State var image: Image?
     
     var body: some View {
         NavigationView {
@@ -45,31 +48,33 @@ struct DriverAccountView: View {
                     }
                 
                 VStack {
-                    Text(name)
+                    Text(driver.name)
                         .font(.largeTitle)
                         .foregroundColor(Color("Navy Blue"))
                     
                     HStack{
-                        VStack{
-                            Text(description)
-                                .foregroundColor(.gray)
-                                .multilineTextAlignment(.center)
-                                .bold()
-                                .font(.callout)
-                                .padding(.horizontal)
-                                .frame(width: 350, height: 50)
+                        if let description = driver.description {
+                            VStack{
+                                Text(description)
+                                    .foregroundColor(.gray)
+                                    .multilineTextAlignment(.center)
+                                    .bold()
+                                    .font(.callout)
+                                    .padding(.horizontal)
+                                    .frame(width: 350, height: 50)
+                            }
+                            .padding(.top, -15)
                         }
-                        .padding(.top, -15)
                     }
                     Divider()
                     
                     HStack{
                         
                         VStack{
-                            Text(carName)
+                            Text(driver.carName)
                                 .foregroundColor(.black)
                             
-                            Text(carPlate)
+                            Text(driver.carPlate)
                                 .foregroundColor(.gray)
                                 .font(.callout)
                             
@@ -77,7 +82,7 @@ struct DriverAccountView: View {
                         .padding()
                         
                         VStack{
-                            Text("4.9")
+                            Text("\(driver.rate)")
                             HStack(spacing: 1){
                                 Image(systemName: "star.fill")
                                     .foregroundColor(.yellow)
@@ -95,7 +100,7 @@ struct DriverAccountView: View {
                                     .foregroundColor(.gray)
                                     .font(.caption2)
                             }
-                            Text("33")
+                            Text("\(driver.numberOfRate)")
                         }
                         .padding()
                     }
@@ -154,6 +159,9 @@ struct DriverAccountView: View {
                 }
                 .offset( y: UIScreen.main.bounds.height / 3 - 40)
             }
+            .onAppear{
+                image = Image(driver.image)
+            }
             
             .navigationBarItems(
                 
@@ -167,14 +175,7 @@ struct DriverAccountView: View {
                     
                 }
                     .sheet(isPresented: $isShowEditProfile) {
-                        EditDriverAccountView(
-                            image: $image,
-                            description: $description,
-                            name: $name,
-                            phone: $phone,
-                            carName: $carName,
-                            carModel: $carModel,
-                            carPlate: $carPlate)
+                        EditDriverAccountView(driver: $driver, image: $image)
                 }
                 ,
                 trailing:

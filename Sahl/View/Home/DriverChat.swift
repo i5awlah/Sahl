@@ -6,10 +6,7 @@
 //
 
 import SwiftUI
-enum Chatt {
-    case Sender
-    case Reciver
-}
+
 struct DriverChat: View {
     
     let driver: Driver
@@ -29,7 +26,7 @@ struct DriverChat: View {
                         presentationMode.wrappedValue.dismiss()
                     }
                 
-                Image(driver.image)
+                Image(driver.image ?? "UserPhoto")
                     .resizable()
                     .frame(width:50 ,height: 50)
                     .clipShape(Circle())
@@ -103,6 +100,6 @@ struct DriverChat: View {
 
 struct FirstDriverChat_Previews: PreviewProvider {
     static var previews: some View {
-        DriverChat(driver: Driver(name: "Saeed", image: "Saeed", carName: "Hyundai H1", carPlate: "1145 WQA", rate: 3, numberOfRate: 25))
+        DriverChat(driver: Driver.all[0])
     }
 }

@@ -14,9 +14,8 @@ struct SettingsView: View {
     
     @State var select: String = "English"
     let filterOption: [String] = ["English", "Arabic"]
-    @State private var isShowDeleteAlert = false
-    @State private var selectUser: User? = nil
     
+    @State private var isShowDeleteAlert = false
     @State private var isShowHelpCenter = false
     
     var body: some View {
@@ -56,7 +55,6 @@ struct SettingsView: View {
                 Text("Delete account")
                     .font(.headline)
                     .onTapGesture {
-                        selectUser = User()
                         isShowDeleteAlert = true
                     }
                     .alert( isPresented: $isShowDeleteAlert,content: {

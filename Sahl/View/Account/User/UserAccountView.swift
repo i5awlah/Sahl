@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-struct User: Identifiable {
-    var id = "Deleet"
-}
-
 struct UserAccountView: View {
-    @State private var selectUser: User? = nil
+    @State private var user: User = User(
+        name: "Adem Abdullah",
+        image: "UserPhoto",
+        phoneNumber: "535100500")
+    @State var image: Image?
+    
     @State private var isShowDeleteAlert = false
     @State var title: String = "Alert"
     @State var select: String = "English"
@@ -20,9 +21,6 @@ struct UserAccountView: View {
     
     @State private var isShowEditProfile = false
     @State private var isShowHelpCenter = false
-    
-    @State var name = "Adem Abdullah"
-    @State var image: Image? = Image("UserPhoto")
     
     @EnvironmentObject var userViewModel: UserViewModel
     
@@ -36,7 +34,7 @@ struct UserAccountView: View {
                     Spacer()
                     
                     VStack{
-                        Text(name)
+                        Text(user.name)
                             .font(.title)
                             .foregroundColor(Color("Navy Blue"))
                             .bold()
@@ -109,7 +107,6 @@ struct UserAccountView: View {
                         Text("Delete account")
                             .font(.headline)
                             .onTapGesture {
-                                selectUser = User()
                                 isShowDeleteAlert = true
                             }
                             .alert( isPresented: $isShowDeleteAlert,content: {
@@ -159,7 +156,7 @@ struct UserAccountView: View {
                         
                     }
                         .sheet(isPresented: $isShowEditProfile) {
-                            EditUserAccountView(image: $image, showSheet: $isShowEditProfile, name: $name)
+                            EditUserAccountView(showSheet: $isShowEditProfile, user: $user, image: $image)
                         }
                     ,
                     trailing:
@@ -178,6 +175,9 @@ struct UserAccountView: View {
                         
                 )
                 
+            }
+            .onAppear{
+                image = Image(user.image)
             }
         }
         

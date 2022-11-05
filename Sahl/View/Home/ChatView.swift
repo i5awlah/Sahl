@@ -10,7 +10,7 @@ import SwiftUI
 struct ChatView: View {
     
     let mesaage: String
-    let selectedChat: Chatt
+    let selectedChat: ChatType
     
     var body: some View {
         Text(mesaage)

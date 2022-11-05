@@ -6,13 +6,9 @@
 //
 
 import SwiftUI
-enum Trip {
-    case Upcoming
-    case Previous
-}
 
 struct TripsView: View {
-    @State var selectedTrip: Trip = .Upcoming
+    @State var selectedTrip: TripType = .Upcoming
     let drivers: [Driver] = Driver.all
 
     var body: some View {
