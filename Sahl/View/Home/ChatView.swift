@@ -14,16 +14,26 @@ struct ChatView: View {
     
     var body: some View {
         Text(mesaage)
-            .frame(width: (UIScreen.main.bounds.width / 2), alignment: .center)
             .padding(10)
             .background(selectedChat == .Sender ? Color("Light Blue") : Color(UIColor.systemGray6))
             .clipShape(RoundedRectangle(cornerRadius:8))
+            .frame(maxWidth: UIScreen.main.bounds.width / 2, alignment: selectedChat == .Sender ? .trailing : .leading)
             .frame(maxWidth: .infinity, alignment: selectedChat == .Sender ? .trailing : .leading)
+        
     }
 }
 
 struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
-        ChatView(mesaage: "hello", selectedChat: .Sender)
+        VStack {
+            ChatView(mesaage: "hello", selectedChat: .Sender)
+            ChatView(mesaage: "hi", selectedChat: .Reciver)
+            ChatView(mesaage: "hello, How are you? Are you Fine? hello, How are you? Are you Fine?", selectedChat: .Sender)
+            ChatView(mesaage: "hello", selectedChat: .Sender)
+        }
     }
 }
+
+/*
+ UIScreen.main.bounds.width / 2
+ */

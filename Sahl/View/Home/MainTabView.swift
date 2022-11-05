@@ -23,7 +23,7 @@ struct MainTabView: View {
             switch(selectedTab) {
             case .home: HomeView(mapState: $mapState)
             case .list: TripsView()
-            case .profile: Text("profile")
+            case .profile: UserAccountView()
             }
             
             tabBar

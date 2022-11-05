@@ -9,12 +9,29 @@ import SwiftUI
 
 struct ReviewsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ScrollView {
+            VStack {
+                // 1
+                ReviewView(name: "Mar***", date: "Now", rateNumber: 2)
+                Divider()
+                ReviewView(name: "Ab***", date: "Now", rateNumber: 5)
+                Divider()
+                ReviewView(name: "Om***", date: "19/08/2022", rateNumber: 4)
+            }
+            .padding()
+        }
+        
+        .navigationTitle("Your reviews")
+        .navigationBarTitleDisplayMode(.inline)
+        
     }
 }
 
 struct ReviewsView_Previews: PreviewProvider {
     static var previews: some View {
-        ReviewsView()
+        NavigationView {
+            ReviewsView()
+        }
     }
 }

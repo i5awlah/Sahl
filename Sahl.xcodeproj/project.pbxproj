@@ -13,6 +13,9 @@
 		90032AA42916657200B0D0A1 /* DriverMiniProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032AA32916657200B0D0A1 /* DriverMiniProfileView.swift */; };
 		90032AA62916673A00B0D0A1 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032AA52916673A00B0D0A1 /* Driver.swift */; };
 		90032AA82916751100B0D0A1 /* DriverTripCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032AA72916751100B0D0A1 /* DriverTripCard.swift */; };
+		90032AAA29167CF500B0D0A1 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032AA929167CF500B0D0A1 /* ImagePicker.swift */; };
+		90032AAE29168DB400B0D0A1 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032AAD29168DB400B0D0A1 /* UserViewModel.swift */; };
+		90032AB029169B4D00B0D0A1 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032AAF29169B4D00B0D0A1 /* ReviewView.swift */; };
 		90F6082629138D7D008CAE5F /* SahlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6082529138D7D008CAE5F /* SahlApp.swift */; };
 		90F6082A29138D7E008CAE5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F6082929138D7E008CAE5F /* Assets.xcassets */; };
 		90F6082E29138D7E008CAE5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F6082D29138D7E008CAE5F /* Preview Assets.xcassets */; };
@@ -58,6 +61,9 @@
 		90032AA32916657200B0D0A1 /* DriverMiniProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverMiniProfileView.swift; sourceTree = "<group>"; };
 		90032AA52916673A00B0D0A1 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
 		90032AA72916751100B0D0A1 /* DriverTripCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTripCard.swift; sourceTree = "<group>"; };
+		90032AA929167CF500B0D0A1 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		90032AAD29168DB400B0D0A1 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		90032AAF29169B4D00B0D0A1 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		90F6082229138D7D008CAE5F /* Sahl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sahl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F6082529138D7D008CAE5F /* SahlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SahlApp.swift; sourceTree = "<group>"; };
 		90F6082929138D7E008CAE5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -231,6 +237,7 @@
 				90F6086C2913914C008CAE5F /* Driver */,
 				90F60873291391A8008CAE5F /* MessageView.swift */,
 				90F608792913924F008CAE5F /* ReviewsView.swift */,
+				90032AAF29169B4D00B0D0A1 /* ReviewView.swift */,
 				90F6087B29139272008CAE5F /* SettingsView.swift */,
 				90F6087D29139287008CAE5F /* HelpCenterView.swift */,
 			);
@@ -259,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				90F6088029139394008CAE5F /* LocationSearchViewModel.swift */,
+				90032AAD29168DB400B0D0A1 /* UserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -285,6 +293,7 @@
 			children = (
 				90F60863291390BA008CAE5F /* Modifiers */,
 				90F608AB291509F1008CAE5F /* BackButton.swift */,
+				90032AA929167CF500B0D0A1 /* ImagePicker.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -386,6 +395,7 @@
 				90F6085129138FD9008CAE5F /* LocationSearchView.swift in Sources */,
 				90F6088629139401008CAE5F /* Color.swift in Sources */,
 				90F6085D29139058008CAE5F /* ChatView.swift in Sources */,
+				90032AAE29168DB400B0D0A1 /* UserViewModel.swift in Sources */,
 				90F6084829138F65008CAE5F /* VerifyView.swift in Sources */,
 				90F6084429138F43008CAE5F /* SignUpView.swift in Sources */,
 				90032AA42916657200B0D0A1 /* DriverMiniProfileView.swift in Sources */,
@@ -393,10 +403,12 @@
 				90F6086E2913915D008CAE5F /* DriverAccountView.swift in Sources */,
 				90F608AC291509F1008CAE5F /* BackButton.swift in Sources */,
 				90032AA02916624D00B0D0A1 /* DriverChat.swift in Sources */,
+				90032AB029169B4D00B0D0A1 /* ReviewView.swift in Sources */,
 				90F6083A29138E88008CAE5F /* SahlLocation.swift in Sources */,
 				90F6082629138D7D008CAE5F /* SahlApp.swift in Sources */,
 				90F60878291391E9008CAE5F /* EditUserAccountView.swift in Sources */,
 				90F6084D29138FB3008CAE5F /* MapViewRepresentable.swift in Sources */,
+				90032AAA29167CF500B0D0A1 /* ImagePicker.swift in Sources */,
 				90F60884291393F0008CAE5F /* Double.swift in Sources */,
 				90F6083829138E76008CAE5F /* MapViewState.swift in Sources */,
 			);

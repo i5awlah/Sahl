@@ -17,7 +17,8 @@ struct VerifyView: View {
    
     @State var enteredPasscode: String = ""
     @FocusState var keyboardFocused: Bool
-    @State var gotoMain = false
+    
+    @EnvironmentObject var userViewModel: UserViewModel
 
     var body: some View {
        
@@ -62,16 +63,9 @@ struct VerifyView: View {
             .padding()
             .onChange(of: enteredPasscode) { newValue in
                 guard enteredPasscode.count == 4 else { return }
-                gotoMain = true
+                userViewModel.currentUserSignedIn = true
+                
             }
-            
-            NavigationLink(isActive: $gotoMain) {
-                MainTabView()
-                    .navigationBarBackButtonHidden()
-            } label: {
-                EmptyView()
-            }
-
         }
         .navigationBarItems(leading: BackButton())
     }

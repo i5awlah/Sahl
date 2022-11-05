@@ -63,7 +63,7 @@ struct ChooseDriver: View {
                         
                         .frame(height: 80)
                         .overlay(RoundedRectangle(cornerRadius:8)
-                            .stroke(Color("Light Blue"),lineWidth: 2.6))
+                            .stroke(Color("Light Blue"),lineWidth: 1))
                         .padding(.horizontal)
                     }
                 }
