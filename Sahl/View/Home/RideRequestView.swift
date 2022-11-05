@@ -13,6 +13,8 @@ struct RideRequestView: View {
     @State var isStart = false
     @Binding var mapState: MapViewState
     
+    @Binding var isDriverAccept: Bool
+    
     var body: some View {
         VStack {
             Spacer()
@@ -96,7 +98,7 @@ struct RideRequestView: View {
                             Text("Wating drivers")
                         }
                         .onTapGesture {
-                            mapState = .noInput
+                            isDriverAccept = true
                         }
                     }
                     
@@ -112,13 +114,7 @@ struct RideRequestView: View {
 
 struct RideRequestView_Previews: PreviewProvider {
     static var previews: some View {
-        RideRequestView(mapState: .constant(.polylineAdded))
+        RideRequestView(mapState: .constant(.polylineAdded), isDriverAccept: .constant(false))
             .environmentObject(LocationSearchViewModel())
     }
 }
-
-/*
- if isStart {
-     ProgressView()
- }
- */

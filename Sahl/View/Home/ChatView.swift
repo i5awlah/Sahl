@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct ChatView: View {
+    
+    let mesaage: String
+    let selectedChat: Chatt
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(mesaage)
+            .frame(width: (UIScreen.main.bounds.width / 2), alignment: .center)
+            .padding(10)
+            .background(selectedChat == .Sender ? Color("Light Blue") : Color(UIColor.systemGray6))
+            .clipShape(RoundedRectangle(cornerRadius:8))
+            .frame(maxWidth: .infinity, alignment: selectedChat == .Sender ? .trailing : .leading)
     }
 }
 
 struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
-        ChatView()
+        ChatView(mesaage: "hello", selectedChat: .Sender)
     }
 }

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		530A311A2913AA2300F9CFAA /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530A31192913AA2300F9CFAA /* PasscodeView.swift */; };
+		90032A962916619E00B0D0A1 /* ChooseDriverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032A952916619E00B0D0A1 /* ChooseDriverView.swift */; };
+		90032AA02916624D00B0D0A1 /* DriverChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032A9F2916624D00B0D0A1 /* DriverChat.swift */; };
+		90032AA42916657200B0D0A1 /* DriverMiniProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032AA32916657200B0D0A1 /* DriverMiniProfileView.swift */; };
+		90032AA62916673A00B0D0A1 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032AA52916673A00B0D0A1 /* Driver.swift */; };
+		90032AA82916751100B0D0A1 /* DriverTripCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032AA72916751100B0D0A1 /* DriverTripCard.swift */; };
 		90F6082629138D7D008CAE5F /* SahlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6082529138D7D008CAE5F /* SahlApp.swift */; };
 		90F6082A29138D7E008CAE5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F6082929138D7E008CAE5F /* Assets.xcassets */; };
 		90F6082E29138D7E008CAE5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F6082D29138D7E008CAE5F /* Preview Assets.xcassets */; };
@@ -26,9 +31,6 @@
 		90F6085129138FD9008CAE5F /* LocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6085029138FD9008CAE5F /* LocationSearchView.swift */; };
 		90F6085329138FF0008CAE5F /* LocationSearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6085229138FF0008CAE5F /* LocationSearchResultCell.swift */; };
 		90F6085529139003008CAE5F /* RideRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6085429139003008CAE5F /* RideRequestView.swift */; };
-		90F608572913901F008CAE5F /* TripInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F608562913901F008CAE5F /* TripInfoView.swift */; };
-		90F6085929139033008CAE5F /* DriversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6085829139033008CAE5F /* DriversView.swift */; };
-		90F6085B29139045008CAE5F /* DriverInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6085A29139045008CAE5F /* DriverInfoView.swift */; };
 		90F6085D29139058008CAE5F /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6085C29139058008CAE5F /* ChatView.swift */; };
 		90F608602913909B008CAE5F /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6085F2913909B008CAE5F /* TripsView.swift */; };
 		90F60862291390AC008CAE5F /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F60861291390AC008CAE5F /* NotificationView.swift */; };
@@ -51,6 +53,11 @@
 
 /* Begin PBXFileReference section */
 		530A31192913AA2300F9CFAA /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
+		90032A952916619E00B0D0A1 /* ChooseDriverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDriverView.swift; sourceTree = "<group>"; };
+		90032A9F2916624D00B0D0A1 /* DriverChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverChat.swift; sourceTree = "<group>"; };
+		90032AA32916657200B0D0A1 /* DriverMiniProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverMiniProfileView.swift; sourceTree = "<group>"; };
+		90032AA52916673A00B0D0A1 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		90032AA72916751100B0D0A1 /* DriverTripCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTripCard.swift; sourceTree = "<group>"; };
 		90F6082229138D7D008CAE5F /* Sahl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sahl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F6082529138D7D008CAE5F /* SahlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SahlApp.swift; sourceTree = "<group>"; };
 		90F6082929138D7E008CAE5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,9 +78,6 @@
 		90F6085029138FD9008CAE5F /* LocationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchView.swift; sourceTree = "<group>"; };
 		90F6085229138FF0008CAE5F /* LocationSearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchResultCell.swift; sourceTree = "<group>"; };
 		90F6085429139003008CAE5F /* RideRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideRequestView.swift; sourceTree = "<group>"; };
-		90F608562913901F008CAE5F /* TripInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripInfoView.swift; sourceTree = "<group>"; };
-		90F6085829139033008CAE5F /* DriversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversView.swift; sourceTree = "<group>"; };
-		90F6085A29139045008CAE5F /* DriverInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverInfoView.swift; sourceTree = "<group>"; };
 		90F6085C29139058008CAE5F /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		90F6085F2913909B008CAE5F /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
 		90F60861291390AC008CAE5F /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 				90F6083529138E63008CAE5F /* TabItems.swift */,
 				90F6083729138E76008CAE5F /* MapViewState.swift */,
 				90F6083929138E88008CAE5F /* SahlLocation.swift */,
+				90032AA52916673A00B0D0A1 /* Driver.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,9 +198,9 @@
 				90F6085029138FD9008CAE5F /* LocationSearchView.swift */,
 				90F6085229138FF0008CAE5F /* LocationSearchResultCell.swift */,
 				90F6085429139003008CAE5F /* RideRequestView.swift */,
-				90F608562913901F008CAE5F /* TripInfoView.swift */,
-				90F6085829139033008CAE5F /* DriversView.swift */,
-				90F6085A29139045008CAE5F /* DriverInfoView.swift */,
+				90032A952916619E00B0D0A1 /* ChooseDriverView.swift */,
+				90032AA32916657200B0D0A1 /* DriverMiniProfileView.swift */,
+				90032A9F2916624D00B0D0A1 /* DriverChat.swift */,
 				90F6085C29139058008CAE5F /* ChatView.swift */,
 			);
 			path = Home;
@@ -205,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				90F6085F2913909B008CAE5F /* TripsView.swift */,
+				90032AA72916751100B0D0A1 /* DriverTripCard.swift */,
 				90F60861291390AC008CAE5F /* NotificationView.swift */,
 			);
 			path = Details;
@@ -359,14 +365,15 @@
 				90F6083D29138ED6008CAE5F /* LaunchView.swift in Sources */,
 				90F60876291391D4008CAE5F /* UserAccountView.swift in Sources */,
 				90F60865291390C9008CAE5F /* LightBlueModifier.swift in Sources */,
+				90032AA82916751100B0D0A1 /* DriverTripCard.swift in Sources */,
 				90F60862291390AC008CAE5F /* NotificationView.swift in Sources */,
 				530A311A2913AA2300F9CFAA /* PasscodeView.swift in Sources */,
 				90F6084229138F2C008CAE5F /* SignInView.swift in Sources */,
 				90F6084F29138FC7008CAE5F /* HomeView.swift in Sources */,
-				90F6085929139033008CAE5F /* DriversView.swift in Sources */,
+				90032A962916619E00B0D0A1 /* ChooseDriverView.swift in Sources */,
+				90032AA62916673A00B0D0A1 /* Driver.swift in Sources */,
 				90F6084629138F54008CAE5F /* SignUpDriverView.swift in Sources */,
 				90F6083629138E63008CAE5F /* TabItems.swift in Sources */,
-				90F608572913901F008CAE5F /* TripInfoView.swift in Sources */,
 				90F60874291391A8008CAE5F /* MessageView.swift in Sources */,
 				90F6084029138F0D008CAE5F /* SahlView.swift in Sources */,
 				90F6084B29138F97008CAE5F /* MainTabView.swift in Sources */,
@@ -381,10 +388,11 @@
 				90F6085D29139058008CAE5F /* ChatView.swift in Sources */,
 				90F6084829138F65008CAE5F /* VerifyView.swift in Sources */,
 				90F6084429138F43008CAE5F /* SignUpView.swift in Sources */,
+				90032AA42916657200B0D0A1 /* DriverMiniProfileView.swift in Sources */,
 				90F6087E29139287008CAE5F /* HelpCenterView.swift in Sources */,
 				90F6086E2913915D008CAE5F /* DriverAccountView.swift in Sources */,
 				90F608AC291509F1008CAE5F /* BackButton.swift in Sources */,
-				90F6085B29139045008CAE5F /* DriverInfoView.swift in Sources */,
+				90032AA02916624D00B0D0A1 /* DriverChat.swift in Sources */,
 				90F6083A29138E88008CAE5F /* SahlLocation.swift in Sources */,
 				90F6082629138D7D008CAE5F /* SahlApp.swift in Sources */,
 				90F60878291391E9008CAE5F /* EditUserAccountView.swift in Sources */,

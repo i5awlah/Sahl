@@ -15,12 +15,14 @@ struct MainTabView: View {
     @State var selectedTab: TabItem = .home
     @State private var mapState = MapViewState.noInput
     
+    @State var isDriverAccept = false
+    
     var body: some View {
         ZStack {
             
             switch(selectedTab) {
             case .home: HomeView(mapState: $mapState)
-            case .list: Text("list")
+            case .list: TripsView()
             case .profile: Text("profile")
             }
             
@@ -28,8 +30,12 @@ struct MainTabView: View {
                 .ignoresSafeArea(.keyboard)
             
             if mapState == .locationSelected || mapState == .polylineAdded {
-                RideRequestView(mapState: $mapState)
-                    .transition(.move(edge: .bottom))
+                if !isDriverAccept {
+                    RideRequestView(mapState: $mapState, isDriverAccept: $isDriverAccept)
+                        .transition(.move(edge: .bottom))
+                } else {
+                    ChooseDriver(mapState: $mapState, isDriverAccept: $isDriverAccept)
+                }
             }
             
         }
