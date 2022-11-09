@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		530A311A2913AA2300F9CFAA /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530A31192913AA2300F9CFAA /* PasscodeView.swift */; };
+		822B9CDF291786700041676C /* TripsDriverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822B9CDE291786700041676C /* TripsDriverView.swift */; };
 		90032A962916619E00B0D0A1 /* ChooseDriverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032A952916619E00B0D0A1 /* ChooseDriverView.swift */; };
 		90032AA02916624D00B0D0A1 /* DriverChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032A9F2916624D00B0D0A1 /* DriverChat.swift */; };
 		90032AA42916657200B0D0A1 /* DriverMiniProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90032AA32916657200B0D0A1 /* DriverMiniProfileView.swift */; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		530A31192913AA2300F9CFAA /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
+		822B9CDE291786700041676C /* TripsDriverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsDriverView.swift; sourceTree = "<group>"; };
 		90032A952916619E00B0D0A1 /* ChooseDriverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDriverView.swift; sourceTree = "<group>"; };
 		90032A9F2916624D00B0D0A1 /* DriverChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverChat.swift; sourceTree = "<group>"; };
 		90032AA32916657200B0D0A1 /* DriverMiniProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverMiniProfileView.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				90F6085F2913909B008CAE5F /* TripsView.swift */,
 				90032AA72916751100B0D0A1 /* DriverTripCard.swift */,
 				90F60861291390AC008CAE5F /* NotificationView.swift */,
+				822B9CDE291786700041676C /* TripsDriverView.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				90032AA62916673A00B0D0A1 /* Driver.swift in Sources */,
 				90032AB42916EE9C00B0D0A1 /* TripType.swift in Sources */,
 				90F6084629138F54008CAE5F /* SignUpDriverView.swift in Sources */,
+				822B9CDF291786700041676C /* TripsDriverView.swift in Sources */,
 				90F6083629138E63008CAE5F /* TabItems.swift in Sources */,
 				90F6084029138F0D008CAE5F /* SahlView.swift in Sources */,
 				90F6084B29138F97008CAE5F /* MainTabView.swift in Sources */,

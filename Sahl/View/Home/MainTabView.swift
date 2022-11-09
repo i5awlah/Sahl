@@ -29,7 +29,7 @@ struct MainTabView: View {
                 }
             } else {
                 switch(selectedTab) {
-                case .home: TripsView()
+                case .home: TripsDriverView()
                 case .list: NotificationView()
                 case .profile: DriverAccountView()
                 }
